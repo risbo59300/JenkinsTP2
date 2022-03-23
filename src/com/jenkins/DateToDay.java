@@ -1,23 +1,31 @@
 package com.jenkins;
 
+import javax.swing.text.DateFormatter;
+import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.util.Date;
 
 public class DateToDay {
 
-    Date now = new Date();
 
-    int mm = now.getMonth();
+    public static void main(String[] args) {
 
-    int dd = now.getDay();
+        Date now = new Date();
 
-    int yyyy = now.getYear();
+        int mm = now.getMonth();
 
-    int hour = now.getHours();
+        int dd = now.getDay();
 
-    int mi = now.getMinutes();
+        int yyyy = now.getYear();
 
-    int ss = now.getSeconds();
+        int hour = now.getHours();
 
+        int mi = now.getMinutes();
 
+        int ss = now.getSeconds();
+
+        System.out.println("Date : "+ mm + "/" + dd + "/" + yyyy + " " + hour + ":" + mi + ":" + ss);
+
+    }
 
 }
